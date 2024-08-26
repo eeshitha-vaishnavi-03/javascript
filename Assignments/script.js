@@ -48,3 +48,8 @@ console.log("b1 Value =", b1, ", Type =", typeof b1);
 console.log("c1 Value =", c1, ", Type =", typeof c1);  
 console.log("d1 Value =", d1, ", Type =", typeof d1);          
 console.log("undefinedVariable: Value =", undefinedVariable, ", Type =", typeof undefinedVariable); 
+
+//Object data type
+
+
+
