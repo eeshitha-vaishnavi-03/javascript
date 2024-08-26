@@ -1,0 +1,13 @@
+let a = 10;
+let b = 5;
+let c = 2;
+let addition = (a + b) + c;
+let subtraction = (a - b) - c;
+let multiplication = (a * b) * c;
+let division = (a / b) / c;
+let modulus = (a % b) % c;
+console.log("Addition: " + addition); 
+console.log("Subtraction: " + subtraction);
+console.log("Multiplication: " + multiplication);
+console.log("Division: " + division);
+console.log("Modulus: " + modulus); 
