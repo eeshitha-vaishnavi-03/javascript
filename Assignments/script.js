@@ -55,10 +55,39 @@ console.log("undefinedVariable: Value =", undefinedVariable, ", Type =", typeof 
 
 //////Type Conversion and Coercion//////
 //Explicit type conversion
+let str = "123";    
+let num = 456;      
+let bool = true;  
 
+let numFromString = Number(str);      
+let strFromNum = String(num);          
+let boolFromNum = Boolean(num);        
+let boolFromString = Boolean(str);
 
+console.log("Original string:", str);
+console.log("Converted to number:", numFromString); 
+console.log("Original number:", num);
+console.log("Converted to string:", strFromNum);
+console.log("Original boolean:", bool);
+console.log("Converted from number to boolean:", boolFromNum);
+console.log("Converted from string to boolean:", boolFromString);
 
 //Implicit type coercion
+//Arithmetic Operations
+let result1 = "5" + 2;        
+console.log(result1);        
+let result2 = "5" - 2;      
+console.log(result2);       
+let result3 = "5" * "2";     
+console.log(result3);        
+
+//Comparison Operations
+let compare1 = "5" == 5;  
+console.log(compare1);
+let compare2 = "5" === 5;
+console.log(compare2);
+let compare3 = "5" > 2; 
+console.log(compare3); 
 
 
 
@@ -80,10 +109,43 @@ console.log(part);
 let anotherPart = text.slice(4, 10);  
 console.log(anotherPart); 
 
+//Template literals
+const name = "Alice";
+const age1 = 25;
+const greeting = `Hello, my name is ${name} and I am ${age1} years old.`;
+console.log(greeting);  
+
+const multiLineString =
+`Hello this is Vaishnavi
+and 
+Iam learning JavaScript`;
+console.log(multiLineString);
+
+const num1 = 5;
+const num2 = 10;
+const result = `The sum of ${num1} and ${num2} is ${num1 + num2}.`;
+console.log(result);  
 
 
+/////Decision-Making Statements/////
+//If-else statements
+const a2 = 45;
+const b2 = 5;
+const c2 = 22;
 
+if (a2 > b2) {
+    if (a2 > c2) {
+        console.log("a2 is the greatest");
+    } else {
+        console.log("c2 is the greatest");
+    }
+} else if (b2 > c2) {
+    console.log("b2 is the greatest");
+} else {
+    console.log("c2 is the greatest");
+}
 
+//Switch statements
 
 
 
