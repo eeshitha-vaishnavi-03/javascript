@@ -53,3 +53,39 @@ console.log("undefinedVariable: Value =", undefinedVariable, ", Type =", typeof 
 
 
 
+//////Type Conversion and Coercion//////
+//Explicit type conversion
+
+
+
+//Implicit type coercion
+
+
+
+/////Strings and Template Literals/////
+//String manipulation
+let firstName1 = "Eeshitha";
+let lastName1 = "Vaishnavi";
+let fullName = firstName + " " + lastName; 
+console.log(fullName); 
+
+console.log(firstName[0]); 
+console.log(lastName[4]); 
+
+console.log(firstName1.length); 
+
+let text = "JavaScript";
+let part = text.substring(0, 4); 
+console.log(part);  
+let anotherPart = text.slice(4, 10);  
+console.log(anotherPart); 
+
+
+
+
+
+
+
+
+
+
