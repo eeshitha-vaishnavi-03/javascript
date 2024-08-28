@@ -280,5 +280,23 @@ greet1("Bob");
 greet1(); 
 
 
+//////Return Statement/////
+//Returning values
+function add(a, b) {
+  return a + b;
+}
+let sum = add(5, 10);
+console.log(sum);
+
+//Chaining function calls
+function sum(a, b){
+  return a+b;
+}
+function mul(a,b){
+  console.log(a*b);
+}
+mul(sum(5,6), 7);//mul(11,7)
+
+
 
 
