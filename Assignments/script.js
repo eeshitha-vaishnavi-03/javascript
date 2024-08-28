@@ -246,6 +246,38 @@ console.log(`passTest: ${passTest}`);
 if (passTest) hasDriversLicense = true;
 if (hasDriversLicense) console.log(`I have a Driving License!`);
 
+/////Function Call and Its Definition/////
+//Function declaration
+function addNumbers(a, b) {
+  console.log("Sum:", a + b);
+}
+function greetUser(greeting,name) {
+  console.log(`${greeting}, ${name}!`);
+}
+addNumbers(5, 10);
+greetUser("Hello","Alice");
+
+//Function expression
+const greet = function(name) {
+  console.log(`Hello, ${name}!`);
+}
+greet("Alice");  
+
+
+///////Passing Parameters to Functions//////
+//Passing arguments
+function multiply(a, b) {
+  console.log(a * b);
+}
+multiply(5, 10);
+
+//Default parameters
+function greet1(name = "Guest", greeting1 = "Hello") {
+  console.log(`${greeting1}, ${name}!`);
+}
+greet1("Alice", "Hi");
+greet1("Bob");
+greet1(); 
 
 
 
