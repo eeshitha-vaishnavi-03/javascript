@@ -9,11 +9,50 @@ console.log(age);
 console.log(`My name is ${firstName} ${lastName} and Iam ${age} years old`);
 
 //Variable Scope
+// Global scope
+var globalVariable = "I'm global";
+
+function outerFunction() {
+  // Local scope
+  var localVariable = "I'm local";
+
+  function innerFunction() {
+    console.log(globalVariable); // Accesses global variable
+    console.log(localVariable); // Accesses local variable
+  }
+
+  innerFunction();
+}
+
+outerFunction();
+
+/////////
+// Using var
+function varExample() {
+    if (true) {
+      var varVariable = "I'm var";
+    }
+    console.log(varVariable); // Logs: "I'm var"
+  }
+  
+  // Using let
+  function letExample() {
+    if (true) {
+      let letVariable = "I'm let";
+    }
+    console.log(letVariable); // Error: letVariable is not defined
+  }
+  
+  // Using const
+  function constExample() {
+    if (true) {
+      const constVariable = "I'm const";
+    }
+    console.log(constVariable); // Error: constVariable is not defined
+  }
 
 
-
-
-////Operators///
+//////Operators/////
 //Arthemetic Operators
 let a = 10;
 let b = 5;
@@ -30,9 +69,29 @@ console.log("Division: " + division);
 console.log("Modulus: " + modulus); 
 
 //Comparison operators
-
+let a3 = 10;
+let b3 = '10';
+let c3 = 20;
+console.log(a3 == b3);
+console.log(a3 != c3);
+console.log(a3 === b3);
+console.log(a3 !== b3);
+console.log(a3 < c3);
+console.log(c3 > a3); 
+console.log(a3 <= b3);
+console.log(c3 >= b3);
 
 //Logical operators
+let x = 5;
+let y = 10;
+let z = 15;
+console.log(x > 0 && y > 0);
+console.log(x > 0 && y < 0);
+console.log(x > 0 || y < 0);
+console.log(x < 0 || y < 0);
+console.log(!(x > 0));
+console.log(!(y < 0));
+console.log((x < y && z > y) || !(x == 5));
 
 
 /////Data Types/////
@@ -48,9 +107,6 @@ console.log("b1 Value =", b1, ", Type =", typeof b1);
 console.log("c1 Value =", c1, ", Type =", typeof c1);  
 console.log("d1 Value =", d1, ", Type =", typeof d1);          
 console.log("undefinedVariable: Value =", undefinedVariable, ", Type =", typeof undefinedVariable); 
-
-//Object data type
-
 
 
 //////Type Conversion and Coercion//////
@@ -146,8 +202,51 @@ if (a2 > b2) {
 }
 
 //Switch statements
+const day = "wednesday";
+
+switch(day) {
+    case "monday": 
+        console.log("plan course structure");
+        console.log("go to coding meetup");
+        break;
+
+    case "tuesday": 
+    case "wednesday":
+        console.log("prepare theory videos");
+        break;
+
+    case "thursday": 
+    case "friday": 
+        console.log("write code examples");
+        break;
+    
+    default: 
+        console.log("not a valid day!");
+}
 
 
-  
+//////Use Strict/////
+//Enable strict mode
+"use strict"; 
+let hasDriversLicense = false;
+console.log(`hasDriversLicense: ${hasDriversLicense}`);
+
+const passTest = true;
+console.log(`passTest: ${passTest}`);
+
+if (passTest) hasDriversLicense = true;
+if (hasDriversLicense) console.log(`I have a Driving License!`);
+//Catches errors
+hasDriversLicense = false;
+console.log(`hasDriversLicense: ${hasDriversLicense}`);
+
+const passTest1 = true;
+console.log(`passTest: ${passTest}`);
+
+if (passTest) hasDriversLicense = true;
+if (hasDriversLicense) console.log(`I have a Driving License!`);
+
+
+
 
 
