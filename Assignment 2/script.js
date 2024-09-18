@@ -1,5 +1,5 @@
 //////////////////### Introduction to Arrays, Creating, Accessing - Arrays, Methods in Arrays
-let fruits = ["Apple", "Banana", "Mango", "Orange"];
+let fruits = ["Strawberry","Avocado","Pineapple","Watermelon"];
 for (let i = 0; i < fruits.length; i++) {
   console.log(fruits[i]);
 }
