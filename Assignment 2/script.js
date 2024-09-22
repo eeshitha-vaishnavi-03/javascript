@@ -1,4 +1,3 @@
-////ASSIGNMENT 2
 "use strict";
 //////////////////### Introduction to Arrays, Creating, Accessing - Arrays, Methods in Arrays
 let fruits = ["Strawberry","Avocado","Pineapple","Watermelon"];
@@ -46,4 +45,42 @@ jonasObject["Hobbies"]="Reading books, Travelling";
 
 console.log(jonasObject.Occupation);
 console.log(jonasObject["Hobbies"]);
+
+
+/////////////### Creating Objects with Properties & Methods, Calling Methods, Understanding about 'this' keyword, Coding Exercise in Objects Declaration, Properties & Methods Accessing
+const Car = {
+  make: "Toyota",
+  model: "Corolla",
+  year: 2020,
+  drive() {
+      console.log(`The ${this.make} ${this.model}, a ${this.year} model, is a well-known compact sedan that stands out for its reliability, fuel efficiency, and practicality.`);
+  }
+};
+Car.drive();
+
+const Calculator = {
+  add(a, b) {
+      return a + b;
+  },
+  subtract(a, b) {
+      return a - b;
+  },
+  multiply(a, b) {
+      return a * b;
+  },
+  divide(a, b) {
+      if (b !== 0) {
+          return a / b;
+      } else {
+          return "Cannot divide by zero";
+      }
+  }
+};
+console.log(Calculator.add(5, 3));    
+console.log(Calculator.subtract(10, 4));
+console.log(Calculator.multiply(6, 7)); 
+console.log(Calculator.divide(20, 4)); 
+console.log(Calculator.divide(10, 0)); 
+console.log(Calculator.divide(10, 4));   
+
 
