@@ -84,3 +84,63 @@ console.log(Calculator.divide(10, 0));
 console.log(Calculator.divide(10, 4));   
 
 
+//////////////////### Iterations: For Loop, While Loop, Break & Continue Statement
+const num=[1,2,3,4,5];
+for(let i=0;i<num.length;i++){
+  console.log(`Number: ${num[i]}`);
+}
+
+const names = ["Eeshu","Vaishu", "hanisha", "Mouni"];
+let i = 0;
+while (i < names.length) {
+  console.log(`Name: ${names[i]}`);
+  i++;
+}
+
+let arr = [1, 2, 3, 4, 5];
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+}
+console.log(sum);
+
+
+
+let arr1 = [1, 3, 2, 4, 9]; 
+let i1 = 0; 
+
+while (i1 < arr1.length) { 
+    if (arr1[i1] % 2 === 0) { 
+        console.log(arr1[i1]); 
+        break; 
+    }
+    i1++; 
+}
+
+// Using continue
+let jonas1 = [
+  "Vaishu",
+  "Eeshu",
+  2021,
+  ["bvxhbv", "vhbasv", "acfsf"],
+  true,
+  "Hahaa"
+];
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] !== 'string') continue; 
+  console.log(jonas1[i], typeof jonas1[i]);    
+}
+
+// Using break
+let jonas2 = [
+  "Vaishu",
+  "Eeshu",
+  2021,
+  ["bvxhbv", "vhbasv", "acfsf"],
+  true,
+  "gahsg"
+];
+for (let j = 0; j < jonas1.length; j++) {
+  if (typeof jonas1[j] !== 'string') break;   
+  console.log(jonas2[j], typeof jonas2[j]);   
+}
