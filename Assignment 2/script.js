@@ -126,8 +126,8 @@ let jonas1 = [
   true,
   "Hahaa"
 ];
-for (let i = 0; i < jonas.length; i++) {
-  if (typeof jonas[i] !== 'string') continue; 
+for (let i = 0; i < jonas1.length; i++) {
+  if (typeof jonas1[i] !== 'string') continue; 
   console.log(jonas1[i], typeof jonas1[i]);    
 }
 
@@ -144,3 +144,49 @@ for (let j = 0; j < jonas1.length; j++) {
   if (typeof jonas1[j] !== 'string') break;   
   console.log(jonas2[j], typeof jonas2[j]);   
 }
+
+
+////////////////### Behind The Scenes: Variable Scope - Global vs Local Variables, Hoisting: Variables, Functions
+
+// Global variable
+let globalVar = "I'm a global variable";
+
+function testScope() {
+  // Local variable
+  let localVar = "I'm a local variable";
+  console.log(globalVar);
+  console.log(localVar);  
+}
+
+testScope();
+console.log(globalVar);   
+//console.log(localVar);     // Error: localVar is not defined (cannot access outside the function)
+
+
+//Hoisting with var 
+console.log(me);
+var me="John";
+
+//Hoisting with functions
+console.log(addDecl(5,6));
+console.log(addExpr(4,9));
+
+function addDecl(a,b){
+    return a+b;
+}
+
+function addExpr(a,b){
+    return a+b;
+}
+
+
+if (conditionVar) {
+  console.log("Condition with 'var' is true");
+} else {
+  console.log("Condition with 'var' is false");
+}
+
+var conditionVar = true;
+
+
+
